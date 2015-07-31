@@ -3,14 +3,23 @@
 </div>
 <div class="scrollable">
     <div class="section scrollable-content">
-        <h2>Moov Internet</h2>
+        <img src="img/bipcool.png">
         <p>
-        <h4>Description</h4>
-        Profitez au maximum du haut débit de Moov et restez connecté avec vos amis sur tes réseaux sociaux ou vos applis préférés grâce aux forfaits 3.75G.
-        </p>
+        C’est un nouveau service de messagerie pré configuré qui permet à un abonné Moov ne disposant pas de crédit d’envoyer un SMS à un correspondant afin que ce dernier le rappelle ou lui transfère du crédit. C’est une offre permanente</p>
         <br>
-            <button type="button" class="btn btn-block btn-moov" ng-click="call('*300%23')">Menu Internet</button>
-            <button type="button" class="btn btn-block btn-moov" ng-click="vcall('*300*1*9%23')">Forfait 15 Mo / 200 f CFA / 48h</button>
+        <p>
+
+Pour envoyer un Bip cool a un correspondant :<br>
+
+Tapez :*108*numéro du correspondant# lancez l’appel.
+<input type="text"
+                 ng-model="bcn"
+                 class="form-control"
+                 placeholder="Numéro du correspondant">
+        <button type="button" class="btn btn-block btn-moov" ng-click="call('*108*'+bcn+'%23')">BIP COOL</button>
+</p>
+        <p>Chaque abonné a droit à 3 sms gratuit (Bip cool) par jour.</p>
+        <p>Après envoi de votre Bip ccol, vous recevez le message ci-après.</p>
     </div>
 </div>
 <div ng-show="service">

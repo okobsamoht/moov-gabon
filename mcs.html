@@ -1,19 +1,47 @@
 <div ui-content-for="title">
-    <span>Service</span>
+    <span>Offre</span>
 </div>
 <div class="scrollable">
+	<div class="scrollable-content">
     <div class="section">
-        <h2>Moov Crédit Secours</h2>
-        <p>
-        <h4>Description</h4>
-        Moovcrédit secours est un service qui permet d’émettre des appels et d’envoyer des SMS lorsque l’abonné n’a plus de crédit. Ainsi grâce à ce service, Moov avance du crédit de communication à l’abonné qu’il rembourse lors de son prochain rechargement. Le service moovcrédit secours est destiné à tous les abonnés prépayés.
-        </p>
+        <img src="img/appels gratuit.jpg">
+<ul><li>
+		Pour activer l’offre Moov Bonus jour, composez <span style="color:#ff0000;">*131*300#</span>, facturé à 300 F et bénéficiez de 900 F de bonus utilisable vers les réseaux locaux valables jusqu’à&nbsp; 24h. Le nombre de souscription est illimité.
+		<button type="button" class="btn btn-block btn-moov" ng-click="vcall('*130*300%23 ')">Activer</button>
+		</li>
+<li>
+		Pour activer l’offre Moov Forfait International, composez <span style="color:#ff0000;">*131* 4#</span>&nbsp; pour le forfait Mini, facturé à 375 F. Les minutes sont valables pour les appels vers les USA, la France et le Nigéria.&nbsp; 
+		<button type="button" class="btn btn-block btn-moov" ng-click="vcall('*131*4%23 ')">Activer</button>
+		</li>
+<li>
+		Pour le forfait 20 composez<span style="color:#ff0000;">*131*20#</span>, facturé à 1600 F et bénéficiez de 26 minutes de communication gratuites vers les USA, la France et le nigéria- Pour connaître la liste des pays, composez gratuitement 
+		<span style="color:#ff0000;">*131*1#</span>.
+		<button type="button" class="btn btn-block btn-moov" ng-click="vcall('*131*20%23 ')">Activer</button>
+		<button type="button" class="btn btn-block btn-moov" ng-click="vcall('*131*1%23 ')">Liste des pays</button>
+		<p>&nbsp;</p>
+		</li>
+<li>
+		Pour activer l’offre Moov Duo composez <span style="color:#ff0000;">*131*7*</span> <span style="color:#ff0000;">le numéro moov#</span>, pour le forfait MOOV DUO semaine facturé à&nbsp; 700 F. Valable 7 jours.
+		<input type="text"
+                 ng-model="numduo"
+                 class="form-control"
+                 placeholder="numéro moov">
+        <button type="button" class="btn btn-block btn-moov" ng-click="vcall('*131*7*'+numduo+'%23 ')">Activer</button>       
+        <p>&nbsp;</p> 
+        </li>
+<li>
+		Composez <span style="color:#ff0000;">*131*30*nummoov#</span> pour le forfait MOOV DUO mois facturé à&nbsp; 2500 F. Validité 30 jours (=1 mois)."<br>
+		<input type="text"
+                 ng-model="numm"
+                 class="form-control"
+                 placeholder="numéro moov">
+        <button type="button" class="btn btn-block btn-moov" ng-click="vcall('*131*30*'+numm+'%23 ')">Activer</button>       
+		<p>&nbsp;</p>
+		</li>
+</ul>
+
         <br>
-        <div class="" role="group" aria-label="...">
-            <button type="button" class="btn btn-block btn-moov" ng-click="call('*121%23')">MENU</button>
-            <button type="button" class="btn btn-block btn-moov" ng-click="vcall('*121*200%23 ')">Crédit de 200F</button>
-            <button type="button" class="btn btn-block btn-moov" ng-click="vcall('*121*500%23 ')">Crédit de 500F</button>
-        </div>
+    </div>
     </div>
 </div>
 <div ng-show="service">

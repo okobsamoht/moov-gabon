@@ -1,25 +1,41 @@
 <div ui-content-for="title">
-    <span>Service</span>
+    <span>Offre</span>
 </div>
 <div class="scrollable">
     <div class="section scrollable-content">
-        <h2>Moov GMail SMS</h2>
+        <img src="img/moovradio.jpg">
         <p>
-        <h4>Description</h4>
-        Le moovgmail sms est un service qui permet aux abonnés Moov d’envoyer et de recevoir des messages de leurs autres contacts Moov via leur compte gmail.
-        </p>
-        <br>
-        <p>
-        <h4>Activation</h4>
-            Pour activer cette fonctionnalité sur votre compte Gmail, il vous suffit de :
-<ul>
-            <li>Cliquer simplement sur l'icône en forme de roue dentée affichée dans l'angle supérieur droit de la page Gmail, puis sélectionner  « Paramètres Gmail » et cliquer sur l'onglet Labos,</li>
-
-            <li>Faire défiler la page jusqu'à la section « Messages texte » (SMS) via la fonction de chat, sélectionner « Activer », puis cliquer sur « Enregistrer les modifications ».</li>
-
-            <li>Pour ceux qui ne disposent pas d’un compte Gmail, ils peuvent en créer un à l'adresse : <a href="http://mail.google.com/mail/signup" target="_blank"></a>http://mail.google.com/mail/signup</li>
-    </ul>
-        </p>
+         <p>&nbsp;</p>
+<ul><li>Vous pouvez écoutez en <strong>direct Rfi</strong> et vos émissions préférées en différés en composant le <strong>701</strong>.
+<button type="button" class="btn btn-block btn-moov" ng-click="call('701')">Appeler</button><p>&nbsp;</p></li>
+<li>
+		Ecoutez <strong>Radio Ndeke Luka Centreafrique</strong> en composant<strong> 702</strong>."
+		<button type="button" class="btn btn-block btn-moov" ng-click="call('702')">Appeler</button><p>&nbsp;</p></li>
+<li>
+		Ecoutez <strong>Radio</strong> <strong>Fulbe international du Senegal </strong>composant <strong>703</strong>.
+		<button type="button" class="btn btn-block btn-moov" ng-click="call('703')">Appeler</button><p>&nbsp;</p></li>
+<li>
+		Ecoutez<strong> Radio Kledu du Mali</strong> en composant le <strong>704</strong>.
+		<button type="button" class="btn btn-block btn-moov" ng-click="call('704')">Appeler</button><p>&nbsp;</p></li>
+<li>
+		Ecoutez <strong>Radio Sud FM </strong>en composant le <strong>705</strong>."
+		<button type="button" class="btn btn-block btn-moov" ng-click="call('705')">Appeler</button><p>&nbsp;</p></li>
+<li>
+		Pour consulter la liste des radios et leur numéro court, Tapez<span style="color:#ff0000;"> *131*12#</span>
+		<button type="button" class="btn btn-block btn-moov" ng-click="call('*131*12%23')">Liste des Radios</button><p>&nbsp;</p></li>
+<li>
+		Pour offrir un forfait à un autre abonné, Tapez <span style="color:#ff0000;">*131*11*</span> numéro du bénéficiaire#
+		
+		<input type="text"
+                 ng-model="rnum"
+                 class="form-control"
+                 placeholder="Numéro du bénéficiaire">
+        <button type="button" class="btn btn-block btn-moov" ng-click="call('*131*11*'+rnum+'%23')">Souscrire</button> <p>&nbsp;</p>        
+       </li>
+<li>
+		Pour souscrire au forfait, Tapez <span style="color:#ff0000;">*131*11*</span>
+		<button type="button" class="btn btn-block btn-moov" ng-click="call('*131*11%23')">Souscrire</button><p>&nbsp;</p></li>
+</ul>
     </div>
 </div>
 <div ng-show="service">

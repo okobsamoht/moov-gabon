@@ -1,0 +1,33 @@
+<div ui-content-for="title">
+    <span>Service</span>
+</div>
+<div class="scrollable">
+    <div class="section scrollable-content">
+        <img src="img/ban_floozdpok_0.png">
+        <p>
+        &nbsp;</p>
+        <br>
+         <p><strong>Flooz</strong> est un service qui permet, à partir d'un compte crée sur votre <strong>mobile Moov</strong> de:</p>
+<ul><li>
+		Transférer de l'argent à vos proches</li>
+<li>
+		Faire vos achats</li>
+<li>
+		Acheter du crédit <strong>Moov</strong></li>
+<li>
+		Payer vos factures et celles de vos proches</li>
+<li>
+		Déposer ou retirer de l'argent partout au Gabon (lien vers réseau de distribution)</li>
+<li>
+		Consulter le solde de votre compte</li>
+</ul>
+
+<button type="button" class="btn btn-block btn-moov" ng-click="call('*100%23')">Menu FLOOZ</button>
+<p>&nbsp;</p>
+<p>Pour télécharger l'application FLOOZ cliquez <a href="https://www.dropbox.com/s/wkwz95qmuye4qef/floozsubscriber_1_3_GAB_LIVE.apk?dl=0">ici</a></p>
+    </div>
+</div>
+<div ng-show="service">
+    {{ service.id }}
+    {{ service.Service }}
+</div>

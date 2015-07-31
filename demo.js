@@ -51,6 +51,9 @@ app.config(function($routeProvider) {
   $routeProvider.when('/mcs',       {templateUrl: 'mcs.html', reloadOnSearch: false});
   $routeProvider.when('/mgs',       {templateUrl: 'mgs.html', reloadOnSearch: false});
   $routeProvider.when('/m3g',       {templateUrl: 'm3g.html', reloadOnSearch: false});
+  $routeProvider.when('/mcsp',       {templateUrl: 'mcsp.html', reloadOnSearch: false});
+  $routeProvider.when('/flooz',       {templateUrl: 'flooz.html', reloadOnSearch: false});
+  $routeProvider.when('/data',       {templateUrl: 'data.html', reloadOnSearch: false});
   $routeProvider.when('/zopim',       {templateUrl: 'zopim.html', reloadOnSearch: false});
 });
 
@@ -316,28 +319,46 @@ app.controller('MainController', function($rootScope, $scope){
   var serviceItems = [
     {
       id:1,
-      service: 'Moov Crédit Secours',
-      description: 'Moovcrédit secours est un service qui permet d’émettre des appels et d’envoyer des SMS lorsque l’abonné n’a plus de ...',
+      service: 'Appels Gratuits',
       codeActivation: '',
       lien: '#/mcs',
       image: ''
     },
     {
       id:2,
-      service: 'MoocGmail SMS',
-      description: 'Le moovgmail sms est un service qui permet aux abonnés Moov d’envoyer et de recevoir des messages de leurs autres ...',
+      service: 'Moov Radio',
       codeActivation: '',
       lien: '#/mgs',
       image: ''
     },
     {
       id:3,
-      service: 'Moov Internet',
-      description: 'Profite à max du haut débit de Moov et reste connecté avec tes potes sur tes réseaux sociaux ou tes applis préférés grâce ...',
+      service: 'Bip Cool',
       codeActivation: '',
       lien: '#/m3g',
       image: ''
     },
+    {
+      id:4,
+      service: 'Moov Partage',
+      codeActivation: '',
+      lien: '#/mcsp',
+      image: ''
+    },
+    {
+      id:5,
+      service: 'FLOOZ',
+      codeActivation: '',
+      lien: '#/flooz',
+      image: ''
+    },
+    {
+      id:6,
+      service: 'Data & Internet',
+      codeActivation: '',
+      lien: '#/data',
+      image: ''
+    }
 
   ];
 
@@ -350,15 +371,15 @@ app.controller('MainController', function($rootScope, $scope){
   var produitItems = [
     {
       id:1,
-      produit: 'Alcatel OT 506D',
-      image: 'OT506D.png',
-      prix: '23 000 FCFA'
+      produit: 'Alcatel OT 679',
+      image: 'ALCATEL OT 679.png',
+      prix: '24 430 FCFA'
     },
     {
       id:2,
-      produit: 'Blackberry® Javelin 8900',
-      image: 'javelin.png',
-      prix: '150 000 FCFA '
+      produit: 'Blackberry 8520',
+      image: 'Blackberry 8520.png',
+      prix: '80 430 FCFA '
     }
 
   ];

@@ -1,0 +1,106 @@
+<div ui-content-for="title">
+    <span>Service</span>
+</div>
+<div class="scrollable">
+    <div class="section scrollable-content">
+        <img src="img/entete_datainternet.png">
+        <p>
+			Avec l'Internet de MOOV, surfez sans fil et sans limite ! Vous avez la possibilité d’accéder à tous vos loisirs et services préférés : Actualité ; sport ; horoscope... Envoyez et recevez des emails directement à partir de votre mobile . Vous accédez depuis un mobile dernière génération de type smartphone, PDA ou terminal évolué, à vos applications d'entreprise partout au Niger. Basée sur la technologie Edge, le Réseau Haut Débit de Moov propose un transfert de données 4 fois plus rapide que le GPRS donc plus confortable.</p>
+        <br>
+        
+        <table width="752" height="103" cellspacing="1" cellpadding="1" border="0" align="center" class="">
+			<tbody><tr bgcolor="#a2d553"><td bgcolor="#f1f1f1">
+				&nbsp;</td>
+<td>
+				<strong>Forfait&nbsp; Nuit</strong></td>
+<td>
+				<strong>Forfait Jour Mini</strong></td>
+<td>
+				<strong>Forfait Jour Medium</strong></td>
+<td>
+				<strong>Forfait&nbsp; Hebdo</strong></td>
+<td>
+				<strong>Forfait&nbsp; Mois</strong></td>
+</tr><tr><td bgcolor="#f1f1f1">
+				<strong>Prix</strong></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				<span style="color:#ff0000;">200 F</span></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				<span style="color:#ff0000;">150 F</span></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				<span style="color:#ff0000;">500 F</span></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				<span style="color:#ff0000;">1 000 F</span></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				<span style="color:#ff0000;">10 000 F</span></td>
+</tr><tr><td bgcolor="#f1f1f1">
+				<strong>Prix Week-end</strong></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				<span style="color:#ff0000;">200 F</span></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				<span style="color:#ff0000;">75 F</span></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				<span style="color:#ff0000;">250 F</span></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				<span style="color:#ff0000;">1000 F</span></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				<span style="color:#ff0000;">10 000 F</span></td>
+</tr><tr><td bgcolor="#f1f1f1">
+				<strong>Souscriptions</strong></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				i au <strong>506</strong></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				i au <strong>501</strong></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				i au <strong>502</strong></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				i au <strong>503</strong></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				i au <strong>530</strong></td>
+</tr><tr><td bgcolor="#f1f1f1">
+				<strong>Validités</strong></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				00 à 6 h</td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				1 jour</td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				1 jour</td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				7 jours</td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				30 jours</td>
+</tr><tr><td bgcolor="#f1f1f1">
+				<strong>Volumes</strong></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				500 Mo</td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				7 Mo</td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				70 Mo</td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				500 Mo</td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+				2 Go</td>
+</tr>
+
+<tr><td bgcolor="#f1f1f1">
+				</td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+<button type="button" class="btn btn-moov" ng-click="vsms('506', 'i')">Activer</button></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+<button type="button" class="btn btn-moov" ng-click="vsms('501', 'i')">Activer</button></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+<button type="button" class="btn btn-moov" ng-click="vsms('502', 'i')">Activer</button></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+<button type="button" class="btn btn-moov" ng-click="vsms('503', 'i')">Activer</button></td>
+<td class="rtecenter" bgcolor="#f1f1f1">
+<button type="button" class="btn btn-moov" ng-click="vsms('530', 'i')">Activer</button></td>
+</tr></tbody></table>
+
+
+    </div>
+</div>
+<div ng-show="service">
+    {{ service.id }}
+    {{ service.Service }}
+</div>

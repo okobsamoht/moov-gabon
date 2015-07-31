@@ -1,0 +1,40 @@
+<div ui-content-for="title">
+    <span>Service</span>
+</div>
+<div class="scrollable">
+    <div class="section scrollable-content">
+        <img src="img/moovpartage.jpg">
+        <p>C’est un nouveau service qui permet de transférer du crédit de communication à partir de votre mobile Moov à un autre abonné du même réseau.</p>
+        
+        <p><h4>Comment s'inscrire?</h4>
+        A partir de votre téléphone tapez *102*0000*code secret à  4 chiffres#. "L’inscription est gratuite."
+        <input type="text"
+                 ng-model="cc"
+                 class="form-control"
+                 placeholder="Code secret">
+        <button type="button" class="btn btn-block btn-moov" ng-click="vcall('*102*0000*'+cc+'%23')">S'inscrire</button></p>
+        
+        <p><h4>Comment transférer du crédut?</h4>
+        A partir de votre téléphone tapez *102*montant*numéro du receveur*code secret à  4 chiffres#. Valider l’appel.
+Vous recevez un message qui vous confirme que votre transfert a été effectué.
+<input type="text"
+                 ng-model="mp"
+                 class="form-control"
+                 placeholder="Montant">
+                 <input type="text"
+                 ng-model="nc"
+                 class="form-control"
+                 placeholder="Numéro du receveur">
+                 <input type="text"
+                 ng-model="tc"
+                 class="form-control"
+                 placeholder="Code secret">
+        <button type="button" class="btn btn-block btn-moov" ng-click="vcall('*102*'+mp+'*'+nc+'*'+tc+'%23')">Transférer</button>
+        </p>
+        <p>Dès qu’un transfert qui vous est destiné a été effectué, vous recevez un message vous informant que le crédit de XXXF vous a été transféré du numéro XXXX. </p>
+    </div>
+</div>
+<div ng-show="service">
+    {{ service.id }}
+    {{ service.Service }}
+</div>
