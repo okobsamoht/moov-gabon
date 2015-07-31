@@ -1,0 +1,22 @@
+<div ui-content-for="title">
+    <span>Service</span>
+</div>
+<div class="scrollable">
+    <div class="section">
+        <h2>Moov Crédit Secours</h2>
+        <p>
+        <h4>Description</h4>
+        Moovcrédit secours est un service qui permet d’émettre des appels et d’envoyer des SMS lorsque l’abonné n’a plus de crédit. Ainsi grâce à ce service, Moov avance du crédit de communication à l’abonné qu’il rembourse lors de son prochain rechargement. Le service moovcrédit secours est destiné à tous les abonnés prépayés.
+        </p>
+        <br>
+        <div class="" role="group" aria-label="...">
+            <button type="button" class="btn btn-block btn-moov" ng-click="call('*121%23')">MENU</button>
+            <button type="button" class="btn btn-block btn-moov" ng-click="vcall('*121*200%23 ')">Crédit de 200F</button>
+            <button type="button" class="btn btn-block btn-moov" ng-click="vcall('*121*500%23 ')">Crédit de 500F</button>
+        </div>
+    </div>
+</div>
+<div ng-show="service">
+    {{ service.id }}
+    {{ service.Service }}
+</div>

@@ -1,0 +1,28 @@
+<div ui-content-for="title">
+    <span>Service</span>
+</div>
+<div class="scrollable">
+    <div class="section scrollable-content">
+        <h2>Moov GMail SMS</h2>
+        <p>
+        <h4>Description</h4>
+        Le moovgmail sms est un service qui permet aux abonnés Moov d’envoyer et de recevoir des messages de leurs autres contacts Moov via leur compte gmail.
+        </p>
+        <br>
+        <p>
+        <h4>Activation</h4>
+            Pour activer cette fonctionnalité sur votre compte Gmail, il vous suffit de :
+<ul>
+            <li>Cliquer simplement sur l'icône en forme de roue dentée affichée dans l'angle supérieur droit de la page Gmail, puis sélectionner  « Paramètres Gmail » et cliquer sur l'onglet Labos,</li>
+
+            <li>Faire défiler la page jusqu'à la section « Messages texte » (SMS) via la fonction de chat, sélectionner « Activer », puis cliquer sur « Enregistrer les modifications ».</li>
+
+            <li>Pour ceux qui ne disposent pas d’un compte Gmail, ils peuvent en créer un à l'adresse : <a href="http://mail.google.com/mail/signup" target="_blank"></a>http://mail.google.com/mail/signup</li>
+    </ul>
+        </p>
+    </div>
+</div>
+<div ng-show="service">
+    {{ service.id }}
+    {{ service.Service }}
+</div>

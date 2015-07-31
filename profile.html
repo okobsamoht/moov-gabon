@@ -1,0 +1,82 @@
+<div ui-content-for="title">
+  <span>Mon Profile</span>
+</div>
+
+<div class="scrollable">
+ <div class="scrollable-content section">
+   
+  <form role="form" ng-submit='login()'>
+      <div class="text-center"><img class="img-circle" src="img/avatar.jpg" height="100"></div>
+    <fieldset>
+      <legend class="text-center">{{nom}}</legend>
+        <div class="form-group">
+          <label>Nom & Prénom(s)</label>
+          <input type="text"
+                 ng-model="nom"
+                 class="form-control"
+                 placeholder="Mes nom et prénoms">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email"
+                 ng-model="email"
+                 class="form-control"
+                 placeholder="Mon email">
+        </div>
+        <div class="form-group">
+          <label>Statut</label>
+          <span ng-model="statut"
+                 class="label label-success">{{statut}}</span>
+        </div>
+        <div class="form-group">
+          <label>Mes Abonnements</label>
+            <div class="scrollable-content">
+                <div class="list-group">
+                    <a ng-repeat="item in abonnItems" href="#{{item}}" class="list-group-item">
+                        {{ item }} <i class="fa fa-chevron-right pull-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        </fieldset>
+      <button class="btn btn-primary btn-block">
+          Enregistrer
+      </button>
+<hr>
+      <fieldset>
+        <div class="form-group">
+            <button class="btn btn-success btn-block" type="button" ng-click="call('%23100%23')">Mon Solde</button>
+        </div>
+        <div class="form-group">
+          <label>Recharger Mon Compte</label>
+            <div class="input-group">
+                <input type="number"
+                       class="form-control"
+                       ng-model="ncr"
+                       placeholder="Numéro de la carte de recharge">
+                <span class="input-group-btn">
+                    <button class="btn btn-success" type="button" ng-click="call('%23101*'+ncr+'%23')">OK</button>
+                </span>
+            </div>
+        </div>
+          <div class="form-group">
+              <button class="btn btn-success btn-block" type="button" ng-click="call('*155%23')">Menu FLOOZ</button>
+          </div>
+
+      </fieldset>
+    <hr>
+
+    <br>
+
+    <!--<button class="btn btn-primary btn-block">
+      Login
+    </button>-->
+
+    <!--<div ui-content-for="navbarAction">
+      <a class='btn' ng-click='login()'>Login</a>
+    </div>-->
+
+  </form>
+ </div>
+</div>

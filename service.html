@@ -1,0 +1,26 @@
+<div ui-content-for="title">
+  <span>Service</span>
+</div>
+<div class="scrollable">
+        <div class="section">
+            <h2>Service</h2>
+            <p>
+                <h4>Description</h4>
+            {{lorem}}
+            </p>
+            <p>
+                <h4>Coût</h4>
+            {{lorem}}
+            </p>
+            <br>
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default" ng-click="solde('*100%23')">Activer</button>
+                <button type="button" class="btn btn-default">Statut</button>
+                <button type="button" class="btn btn-default">Désactiver</button>
+            </div>
+        </div>
+</div>
+<div ng-show="service">
+       {{ service.id }}
+       {{ service.Service }}
+</div>

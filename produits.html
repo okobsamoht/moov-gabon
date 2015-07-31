@@ -1,0 +1,22 @@
+<div ui-content-for="title">
+  <span>Produits</span>
+</div>
+
+<div class="carousel">
+  <div class="carousel-inner">
+    <div ng-repeat="item in produitItems" class="carousel-item" >
+        <div class="col-sm-5">
+            <br>
+            <h3>{{item.produit}}</h3>
+            <img src="img/{{item.image}}" style="max-height: 250px !important;">
+        </div>
+        <div class="col-sm-7">
+            <p>&nbsp;</p>
+            <p>{{item.prix}}</p>
+
+                <a href="#produit/{{item.id}}" class="btn btn-primary btn-block">En savoir Plus</a>
+
+        </div>
+    </div>
+  </div>
+</div>

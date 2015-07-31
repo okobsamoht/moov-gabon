@@ -1,0 +1,24 @@
+<div ui-content-for="title">
+  <span>Offres</span>
+</div>
+
+<div class="carousel">
+  <div class="carousel-inner">
+    <div ng-repeat="item in offreItems" class="carousel-item" >
+        <div class="col-sm-5">
+            <br>
+            <h3>{{item.offre}}</h3>
+            <img src="img/{{item.image}}" style="max-height: 250px !important;">
+        </div>
+        <div class="col-sm-7">
+            <p>&nbsp;</p>
+            <p>{{item.description}}</p>
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-lg btn-success btn-block" ng-click="vcall(item.activ)">Activer</button>
+                <!--<button type="button" class="btn btn-default">Statut</button>
+                <button type="button" class="btn btn-default">Désactiver</button>-->
+            </div>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div ui-content-for="title">
+    <span>Service</span>
+</div>
+<div class="scrollable">
+    <div class="section scrollable-content">
+        <h2>Moov Internet</h2>
+        <p>
+        <h4>Description</h4>
+        Profitez au maximum du haut débit de Moov et restez connecté avec vos amis sur tes réseaux sociaux ou vos applis préférés grâce aux forfaits 3.75G.
+        </p>
+        <br>
+            <button type="button" class="btn btn-block btn-moov" ng-click="call('*300%23')">Menu Internet</button>
+            <button type="button" class="btn btn-block btn-moov" ng-click="vcall('*300*1*9%23')">Forfait 15 Mo / 200 f CFA / 48h</button>
+    </div>
+</div>
+<div ng-show="service">
+    {{ service.id }}
+    {{ service.Service }}
+</div>

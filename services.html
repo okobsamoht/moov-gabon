@@ -1,0 +1,20 @@
+<div ui-content-for="title">
+  <span>Services</span>
+</div>
+
+<div class="scrollable" ui-state="searchBar">
+  <input
+    ng-if="Ui.active('searchBar')"
+    type="search"
+    class="form-control scrollable-header"
+    placeholder="Search.." />
+
+  <div class="scrollable-content">
+    <div class="list-group">
+      <a ng-repeat="item in serviceItems" href="{{item.lien}}" class="list-group-item">
+        {{ item.service }} <i class="fa fa-chevron-right pull-right"></i>
+      </a>
+    </div>
+  </div>
+
+</div>
