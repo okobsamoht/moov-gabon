@@ -221,3 +221,7 @@ fieldset[disabled] .btn-moov.active {
   color: #cad300;
   background-color: #ffffff;
 }
+
+body {
+    text-align: justify;
+}
