@@ -55,6 +55,7 @@ app.config(function($routeProvider) {
   $routeProvider.when('/flooz',       {templateUrl: 'flooz.html', reloadOnSearch: false});
   $routeProvider.when('/data',       {templateUrl: 'data.html', reloadOnSearch: false});
   $routeProvider.when('/zopim',       {templateUrl: 'zopim.html', reloadOnSearch: false});
+  $routeProvider.when('/roam',       {templateUrl: 'roam.html', reloadOnSearch: false});
 });
 
 // 
@@ -443,6 +444,7 @@ app.controller('MainController', function($rootScope, $scope){
   $scope.statut = 'SILVER';
   $scope.nom = localStorage.getItem('nom');
   $scope.email = localStorage.getItem('email');
+  $scope.exitApp = function() {navigator.app.exitApp()};
 
   $scope.login = function() {
     //alert('You submitted the login form' + $scope.ncr);
